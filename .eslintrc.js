@@ -25,6 +25,7 @@ module.exports = {
     'max-len': 0,
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/button-has-type': 'off',
     'react/jsx-props-no-spreading': [
       2,
       {
