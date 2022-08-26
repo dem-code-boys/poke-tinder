@@ -3,9 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'airbnb',
-  ],
+  extends: ['airbnb'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -17,12 +15,11 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'no-param-reassign': 0,
     'max-len': 0,
+    'linebreak-style': ['error', 'unix'],
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/button-has-type': 'off',
@@ -32,21 +29,13 @@ module.exports = {
         html: 'ignore',
       },
     ],
-    radix: [
-      'error',
-      'as-needed',
-    ],
+    radix: ['error', 'as-needed'],
   },
   settings: {
     'import/resolver': {
       node: {
-        paths: [
-          'src',
-        ],
-        extensions: [
-          '.js',
-          '.jsx',
-        ],
+        paths: ['src'],
+        extensions: ['.js', '.jsx'],
       },
     },
   },
