@@ -1,3 +1,6 @@
+import Screen from './Top/Screen/Screen';
+import './ProfileCard.scss';
+
 /* eslint-disable react/prop-types */
 function ProfileCard({ pokemonData }) {
   const getPokemonStats = () => {
@@ -20,10 +23,12 @@ function ProfileCard({ pokemonData }) {
   };
 
   return (
-    <div>
-      <span>{`No. ${pokemonData.id}`}</span>
-      <h1>{pokemonData.name}</h1>
-      <img src={pokemonData.sprites.front_shiny} alt={pokemonData.name} />
+    <div className="container">
+      <Screen
+        img={pokemonData.sprites.front_shiny}
+        name={pokemonData.name}
+        id={pokemonData.id}
+      />
       {getPokemonStats()}
       {getPokemonTypes()}
     </div>
